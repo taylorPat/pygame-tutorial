@@ -21,7 +21,7 @@ class Snail:
 
     @property
     def surface(self):
-        return pygame.image.load(self.imagePath)
+        return pygame.image.load(self.imagePath).convert_alpha()
 
     @cached_property
     def rectangle(self):
